@@ -1,4 +1,6 @@
 
+#model value and equations copied from: 
+#http://www.ohio.edu/people/williar4/html/pdf/DeltaKin.pdf
 
 
 import math 
