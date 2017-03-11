@@ -9,23 +9,23 @@ import math
 
 # Defining the model value 
 
-Sb = 567.0		# Base equilateral triangle side 
+Sb = 0.567	# Base equilateral triangle side 
 
-Sp = 76.0			#Platform equilateral triangle side 
+Sp = 0.076			#Platform equilateral triangle side 
 
-L = 524.0			#Upper legs length
+L = 0.524			#Upper legs length
 
-l = 1244.0		#Lower legs parallelogram length 
+l = 1.244		#Lower legs parallelogram length 
 
-h = 131.0			#lower legs parallelogram width 
+h = 0.131			#lower legs parallelogram width 
 
-Wb = 164.0		#planar distance from {0} to near base side
+Wb = 0.164		#planar distance from {0} to near base side
 
-Ub = 327.0		#planar distance from {0} to a base vertex
+Ub = 0.327		#planar distance from {0} to a base vertex
 
-Wp = 22.0			#planar distance from {P} to near platform side
+Wp = 0.022			#planar distance from {P} to near platform side
 
-Up = 44.0			#planar distance from {P} to a platform vertex
+Up = 0.044			#planar distance from {P} to a platform vertex
 
 # Where: 
 
@@ -63,9 +63,9 @@ def inverse_kinematic(x0, y0, z0):
 	G3 = math.pow(x0,2) + math.pow(y0,2) + math.pow(z0,2) + math.pow(b,2) + math.pow(c,2) + math.pow(L,2) + 2.0 * (-x0 * b + y0 * c) - math.pow(l,2)
 	
 	
-	st1 = abs(math.pow(E1,2) + math.pow(F1,2) - math.pow(G1,2))
-	st2 = abs(math.pow(E2,2) + math.pow(F2,2) - math.pow(G2,2))
-	st3 = abs(math.pow(E3,2) + math.pow(F3,2) - math.pow(G3,2))
+	st1 = (math.pow(E1,2) + math.pow(F1,2) - math.pow(G1,2))
+	st2 = (math.pow(E2,2) + math.pow(F2,2) - math.pow(G2,2))
+	st3 = (math.pow(E3,2) + math.pow(F3,2) - math.pow(G3,2))
 	
 	
 	t11 = (-F1 + math.sqrt(st1)) / (G1 - E1)
